@@ -1,40 +1,34 @@
 package org.parthiv.orderbook.orders;
 
-public class OrderCore implements IOrderCore {
-    private final String orderId, securityId, username;
+/**
+ * Represents key information about an order
+ */
+public class OrderCore {
+    private final String orderId, username, securityId;
 
-    /**
-     * @param orderId    unique identifier for the order
-     * @param securityId unique identifier for the security
-     * @param username   unique identifier for the trader
-     */
-    OrderCore(String orderId, String securityId, String username) {
+    public OrderCore(String orderId, String username, String securityId) {
         this.orderId = orderId;
-        this.securityId = securityId;
         this.username = username;
+        this.securityId = securityId;
     }
 
     /**
-     * @return unique identifier for the order
+     * @return unique identifier for an order
      */
-    @Override
     public String getOrderId() {
-        return orderId;
+        return this.orderId;
     }
-
     /**
-     * @return unique identifier for the security
+     * @return unique identifier for a security
      */
-    @Override
     public String getSecurityId() {
-        return securityId;
+        return this.securityId;
     }
 
     /**
      * @return unique identifier for the trader
      */
-    @Override
     public String getUsername() {
-        return username;
+        return this.username;
     }
 }
