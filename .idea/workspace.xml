@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71857fa4-7adf-4913-9156-fa8e8d54cfe0" name="Changes" comment="" />
+    <list default="true" id="71857fa4-7adf-4913-9156-fa8e8d54cfe0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/DataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingEngine/src/test/java/OrderBookTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/TradingEngineHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/TradingEngineHost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderBookVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderBookReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/MatchingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/MatchingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderAdder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBookEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderRemover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/PriceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/PriceLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/IOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/IOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/LimitOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/LimitOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/MarketOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/MarketOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/DataServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/DataServerClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/DataServiceClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/IDataServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/IOrderServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/servers/OrderServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/test/java/Tests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,12 +59,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.OrderBookTests.executor": "Run",
+    "JUnit.OrderBookTests.testAddBuyLimitOrder.executor": "Run",
+    "JUnit.OrderBookTests.testAddOrder.executor": "Run",
+    "JUnit.OrderBookTests.testAddSellLimitOrder.executor": "Run",
+    "JUnit.OrderBookTests.testRemoveBuyLimitOrder.executor": "Run",
+    "JUnit.OrderBookTests.testRemoveLimitOrder.executor": "Debug",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects in Uni/TradingEngine",
+    "last_opened_file_path": "D:/Projects in Uni/ServerTesting",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +83,66 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.OrderBookTests">
+    <configuration name="OrderBookTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TradingEngine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderBookTests.testAddBuyLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TradingEngine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
+      <option name="METHOD_NAME" value="testAddBuyLimitOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderBookTests.testAddSellLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TradingEngine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
+      <option name="METHOD_NAME" value="testAddSellLimitOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderBookTests.testRemoveBuyLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TradingEngine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
+      <option name="METHOD_NAME" value="testRemoveBuyLimitOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderBookTests.testRemoveLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TradingEngine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
+      <option name="METHOD_NAME" value="testRemoveLimitOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrderBookTests" />
+        <item itemvalue="JUnit.OrderBookTests.testRemoveBuyLimitOrder" />
+        <item itemvalue="JUnit.OrderBookTests.testAddBuyLimitOrder" />
+        <item itemvalue="JUnit.OrderBookTests.testAddSellLimitOrder" />
+        <item itemvalue="JUnit.OrderBookTests.testRemoveLimitOrder" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,11 +160,19 @@
       <updated>1735336212293</updated>
       <workItem from="1735336214101" duration="115000" />
       <workItem from="1735336584946" duration="93000" />
-      <workItem from="1735336761058" duration="15431000" />
+      <workItem from="1735336761058" duration="17750000" />
+      <workItem from="1735405204886" duration="4783000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.parthiv.orderbook.OrderBook" memberName="asks" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

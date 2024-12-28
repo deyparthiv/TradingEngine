@@ -12,7 +12,6 @@ public class OrderBook implements IOrderBook {
     final ConcurrentMap<String, OrderBookEntry> orderBookEntries;
     final SortedMap<Long, PriceLevel> bids;
     final SortedMap<Long, PriceLevel> asks;
-
     public OrderBook(String security) {
         this.security = security;
         orderBookEntries = new ConcurrentHashMap<>();
@@ -24,7 +23,7 @@ public class OrderBook implements IOrderBook {
     }
 
     /**
-     * @return
+     * @return the security associated with this order book
      */
     @Override
     public String getSecurity() {
@@ -37,5 +36,14 @@ public class OrderBook implements IOrderBook {
     @Override
     public void accept(IOrderBookVisitor visitor) {
         visitor.visit(this);
+    }
+
+    /**
+     * for testing purposes
+     * @param orderId
+     * @return
+     */
+    public boolean containsOrder(String orderId){
+        return orderBookEntries.containsKey(orderId);
     }
 }

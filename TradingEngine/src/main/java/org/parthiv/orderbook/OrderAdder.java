@@ -23,11 +23,12 @@ public class OrderAdder implements IOrderVisitor, IOrderBookWriter {
         if (orderBook.orderBookEntries.containsKey(order.getOrderId()))
             throw new IllegalArgumentException("tried to add order which already exists");
 
-        long price = order.getPrice();
+        Long price = order.getPrice();
         boolean isBuySide = order.isBuySide();
         OrderBookEntry obe = new OrderBookEntry(
                 order.getUsername(), order.getQuantity(), order.getPrice()
         );
+
         if (isBuySide) { //order is a bid
             if (orderBook.bids.containsKey(price)) {
                 orderBook.bids.get(price)
@@ -55,6 +56,6 @@ public class OrderAdder implements IOrderVisitor, IOrderBookWriter {
      */
     @Override
     public void visit(MarketOrder order) {
-
+        throw new UnsupportedOperationException();
     }
 }

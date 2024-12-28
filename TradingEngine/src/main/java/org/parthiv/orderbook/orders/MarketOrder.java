@@ -43,4 +43,12 @@ public class MarketOrder implements IOrder {
     public String getUsername() {
         return orderCore.getUsername();
     }
+
+    /**
+     * @return
+     */
+    @Override
+    public int getQuantity() {
+        return 0;
+    }
 }

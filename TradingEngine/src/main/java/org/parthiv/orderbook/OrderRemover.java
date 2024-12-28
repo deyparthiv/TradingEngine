@@ -3,6 +3,8 @@ package org.parthiv.orderbook;
 import org.parthiv.orderbook.orders.LimitOrder;
 import org.parthiv.orderbook.orders.MarketOrder;
 
+import java.util.concurrent.PriorityBlockingQueue;
+
 public class OrderRemover implements IOrderVisitor {
     final OrderBook orderBook;
     public OrderRemover(OrderBook orderBook){
@@ -18,10 +20,13 @@ public class OrderRemover implements IOrderVisitor {
             throw new IllegalArgumentException("tried to delete order which does not exist");
 
         OrderBookEntry obe = orderBook.orderBookEntries.get(order.getOrderId());
+        if(obe==null) throw new RuntimeException();
         if(order.isBuySide()){
-            orderBook.asks.get(obe.price).ordersAtPriceLevel.remove(obe);
+            PriorityBlockingQueue<OrderBookEntry> bids = orderBook.bids.get(obe.price).ordersAtPriceLevel;
+            if(!bids.contains(obe)) throw new RuntimeException();
+            bids.remove(obe);
         }else {
-            orderBook.bids.get(obe.price).ordersAtPriceLevel.remove(obe);
+            orderBook.asks.get(obe.price).ordersAtPriceLevel.remove(obe);
         }
         orderBook.orderBookEntries.remove(order.getOrderId());
     }
@@ -31,6 +36,6 @@ public class OrderRemover implements IOrderVisitor {
      */
     @Override
     public void visit(MarketOrder order) {
-
+        throw new UnsupportedOperationException();
     }
 }

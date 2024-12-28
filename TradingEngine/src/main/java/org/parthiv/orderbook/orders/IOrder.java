@@ -24,4 +24,5 @@ public interface IOrder {
     public String getUsername();
 
     public int getQuantity();
+
 }
