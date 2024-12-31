@@ -18,5 +18,4 @@ public class TradingEngineHost {
         services.forEach(Runnable::run);
     }
 
-
 }
