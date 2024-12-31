@@ -14,6 +14,9 @@ public class TradingEngineHost {
         DataService dataServer = new DataService();
         OrderService orderService = new OrderService();
     }
+    public void start(){
+        services.forEach(Runnable::run);
+    }
 
 
 }

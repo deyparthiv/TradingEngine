@@ -31,4 +31,5 @@ public class OrderCore {
     public String getUsername() {
         return this.username;
     }
+
 }

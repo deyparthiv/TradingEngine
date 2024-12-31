@@ -26,7 +26,7 @@ public class OrderAdder implements IOrderVisitor, IOrderBookWriter {
         Long price = order.getPrice();
         boolean isBuySide = order.isBuySide();
         OrderBookEntry obe = new OrderBookEntry(
-                order.getUsername(), order.getQuantity(), order.getPrice()
+                order.getOrderCore(), order.getQuantity(), order.getPrice()
         );
 
         if (isBuySide) { //order is a bid

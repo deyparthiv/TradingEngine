@@ -10,7 +10,7 @@ public interface IOrderBook {
     public String getSecurity();
 
     /**
-     * @param visitor pattern for operations on the order book
+     * @param reader visitor pattern for reading the order book
      */
-    public void accept(IOrderBookVisitor visitor);
+    public void accept(IOrderBookReader reader);
 }

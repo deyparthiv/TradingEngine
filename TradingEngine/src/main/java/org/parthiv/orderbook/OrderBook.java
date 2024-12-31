@@ -10,8 +10,8 @@ import java.util.concurrent.ConcurrentMap;
 public class OrderBook implements IOrderBook {
     final String security;
     final ConcurrentMap<String, OrderBookEntry> orderBookEntries;
-    final SortedMap<Long, PriceLevel> bids;
-    final SortedMap<Long, PriceLevel> asks;
+    public final SortedMap<Long, PriceLevel> bids;
+    public final SortedMap<Long, PriceLevel> asks;
     public OrderBook(String security) {
         this.security = security;
         orderBookEntries = new ConcurrentHashMap<>();
@@ -31,11 +31,11 @@ public class OrderBook implements IOrderBook {
     }
 
     /**
-     * @param visitor pattern for operations on the order book
+     * @param reader pattern for operations on the order book
      */
     @Override
-    public void accept(IOrderBookVisitor visitor) {
-        visitor.visit(this);
+    public void accept(IOrderBookReader reader) {
+        reader.read(this);
     }
 
     /**

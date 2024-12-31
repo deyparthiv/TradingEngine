@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71857fa4-7adf-4913-9156-fa8e8d54cfe0" name="Changes" comment="" />
+    <list default="true" id="71857fa4-7adf-4913-9156-fa8e8d54cfe0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/TradingEngineHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/TradingEngineHost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/IOrderBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderAdder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/OrderBookEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/PriceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/PriceLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/IOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/IOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/LimitOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/LimitOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/MarketOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/MarketOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/OrderCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/main/java/org/parthiv/orderbook/orders/OrderCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TradingEngine/src/test/java/OrderBookTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/TradingEngine/src/test/java/OrderBookTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +53,10 @@
     "JUnit.OrderBookTests.testAddBuyLimitOrder.executor": "Run",
     "JUnit.OrderBookTests.testAddOrder.executor": "Run",
     "JUnit.OrderBookTests.testAddSellLimitOrder.executor": "Run",
+    "JUnit.OrderBookTests.testAsksOrderingAtSamePrice.executor": "Run",
+    "JUnit.OrderBookTests.testAsksOrderingByPrice.executor": "Run",
+    "JUnit.OrderBookTests.testBidsOrderingAtSamePrice.executor": "Run",
+    "JUnit.OrderBookTests.testBidsOrderingOfPrice.executor": "Run",
     "JUnit.OrderBookTests.testRemoveBuyLimitOrder.executor": "Run",
     "JUnit.OrderBookTests.testRemoveLimitOrder.executor": "Debug",
     "OverrideImplement.generate.javadoc": "true",
@@ -47,7 +65,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects in Uni/ServerTesting",
+    "last_opened_file_path": "D:/Projects in Uni/TradingEngine",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,41 +87,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderBookTests.testAddBuyLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderBookTests.testAsksOrderingAtSamePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TradingEngine" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
-      <option name="METHOD_NAME" value="testAddBuyLimitOrder" />
+      <option name="METHOD_NAME" value="testAsksOrderingAtSamePrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderBookTests.testAddSellLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderBookTests.testAsksOrderingByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TradingEngine" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
-      <option name="METHOD_NAME" value="testAddSellLimitOrder" />
+      <option name="METHOD_NAME" value="testAsksOrderingByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderBookTests.testRemoveBuyLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderBookTests.testBidsOrderingAtSamePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TradingEngine" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
-      <option name="METHOD_NAME" value="testRemoveBuyLimitOrder" />
+      <option name="METHOD_NAME" value="testBidsOrderingAtSamePrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderBookTests.testRemoveLimitOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderBookTests.testBidsOrderingOfPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TradingEngine" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrderBookTests" />
-      <option name="METHOD_NAME" value="testRemoveLimitOrder" />
+      <option name="METHOD_NAME" value="testBidsOrderingOfPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,10 +130,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.OrderBookTests" />
-        <item itemvalue="JUnit.OrderBookTests.testRemoveBuyLimitOrder" />
-        <item itemvalue="JUnit.OrderBookTests.testAddBuyLimitOrder" />
-        <item itemvalue="JUnit.OrderBookTests.testAddSellLimitOrder" />
-        <item itemvalue="JUnit.OrderBookTests.testRemoveLimitOrder" />
+        <item itemvalue="JUnit.OrderBookTests.testAsksOrderingAtSamePrice" />
+        <item itemvalue="JUnit.OrderBookTests.testBidsOrderingAtSamePrice" />
+        <item itemvalue="JUnit.OrderBookTests.testAsksOrderingByPrice" />
+        <item itemvalue="JUnit.OrderBookTests.testBidsOrderingOfPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +155,8 @@
       <workItem from="1735336214101" duration="115000" />
       <workItem from="1735336584946" duration="93000" />
       <workItem from="1735336761058" duration="17750000" />
-      <workItem from="1735405204886" duration="5336000" />
+      <workItem from="1735405204886" duration="10079000" />
+      <workItem from="1735593750885" duration="4164000" />
     </task>
     <servers />
   </component>

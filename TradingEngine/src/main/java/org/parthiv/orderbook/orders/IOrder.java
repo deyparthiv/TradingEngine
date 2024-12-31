@@ -25,4 +25,6 @@ public interface IOrder {
 
     public int getQuantity();
 
+    public OrderCore getOrderCore();
+
 }

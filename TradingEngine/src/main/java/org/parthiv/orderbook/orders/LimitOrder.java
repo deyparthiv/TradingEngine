@@ -73,6 +73,14 @@ public class LimitOrder implements ILimitOrder {
        return this.quantity;
     }
 
+    /**
+     * @return
+     */
+    @Override
+    public OrderCore getOrderCore() {
+       return this.orderCore;
+    }
+
     @Override
     public boolean equals(Object o){
         LimitOrder order = (LimitOrder)o;

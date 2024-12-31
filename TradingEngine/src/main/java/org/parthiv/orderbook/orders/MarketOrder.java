@@ -51,4 +51,12 @@ public class MarketOrder implements IOrder {
     public int getQuantity() {
         return 0;
     }
+
+    /**
+     * @return
+     */
+    @Override
+    public OrderCore getOrderCore() {
+       return this.orderCore;
+    }
 }
