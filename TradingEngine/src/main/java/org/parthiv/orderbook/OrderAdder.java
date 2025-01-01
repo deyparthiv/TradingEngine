@@ -4,9 +4,7 @@ import org.parthiv.orderbook.orders.LimitOrder;
 import org.parthiv.orderbook.orders.MarketOrder;
 
 public class OrderAdder implements IOrderVisitor, IOrderBookWriter {
-    /**
-     * @param order
-     */
+
     final OrderBook orderBook;
 
     public OrderAdder(OrderBook orderBook) {

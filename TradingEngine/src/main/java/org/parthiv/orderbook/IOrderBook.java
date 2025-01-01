@@ -1,6 +1,6 @@
 package org.parthiv.orderbook;
 
-import java.security.Security;
+import org.parthiv.security.ISecurity;
 
 /**
  * Interface for the order book
@@ -9,7 +9,7 @@ public interface IOrderBook {
     /**
      * @return the unique identifier of the security this order book is for
      */
-    public Security getSecurity();
+    public ISecurity getSecurity();
 
     /**
      * @param reader visitor pattern for reading the order book

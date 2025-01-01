@@ -1,5 +1,7 @@
 package org.parthiv.orderbook;
 
+import org.parthiv.security.ISecurity;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -26,7 +28,7 @@ public class OrderBook implements IOrderBook {
      * @return the security associated with this order book
      */
     @Override
-    public String getSecurity() {
+    public ISecurity getSecurity() {
         return security;
     }
 
