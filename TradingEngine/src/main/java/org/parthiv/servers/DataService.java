@@ -10,7 +10,7 @@ public class DataService implements IDataService {
     }
 
     /**
-     * Runs this operation.
+     * Runs this operation
      */
     @Override
     public void run() {

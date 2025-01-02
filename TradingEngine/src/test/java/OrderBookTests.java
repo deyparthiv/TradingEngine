@@ -9,6 +9,7 @@ public class OrderBookTests {
     @Test
     public void testAddBuyLimitOrder() {
         String mockSecurityId = "1";
+
         OrderBook orderBook = new OrderBook(mockSecurityId);
         OrderAdder adder = new OrderAdder(orderBook);
 
