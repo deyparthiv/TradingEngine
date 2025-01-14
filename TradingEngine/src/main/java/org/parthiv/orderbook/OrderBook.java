@@ -10,11 +10,11 @@ import java.util.concurrent.ConcurrentMap;
  * Internal representation of an order book for a security
  */
 public class OrderBook implements IOrderBook {
-    final String security;
+    final ISecurity security;
     final ConcurrentMap<String, OrderBookEntry> orderBookEntries;
     public final SortedMap<Long, PriceLevel> bids;
     public final SortedMap<Long, PriceLevel> asks;
-    public OrderBook(String security) {
+    public OrderBook(ISecurity security) {
         this.security = security;
         orderBookEntries = new ConcurrentHashMap<>();
         //sort asks in ascending order

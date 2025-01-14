@@ -10,12 +10,12 @@ import java.util.concurrent.ConcurrentMap;
 
 public class OrderBooks {
     private final ConcurrentMap<ISecurity, IOrderBook> orderBooks;
-    private final BlockingQueue<IOrderRequest> requests;
+    //private final BlockingQueue<IOrderRequest> requests;
     public OrderBooks(List<ISecurity> securities) {
         orderBooks = new ConcurrentHashMap<>();
-        securities.forEach(
-                security -> orderBooks.put(security, new OrderBook(security.toString()))
-        );
+//        securities.forEach(
+//                security -> orderBooks.put(security, new OrderBook(security.toString()))
+//        );
     }
     public IOrderBook getOrderBook(ISecurity security) {
         return orderBooks.get(security);

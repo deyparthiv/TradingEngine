@@ -11,3 +11,4 @@ public interface IOrderVisitor {
     public void visit(LimitOrder order);
     public void visit(MarketOrder order);
 }
+

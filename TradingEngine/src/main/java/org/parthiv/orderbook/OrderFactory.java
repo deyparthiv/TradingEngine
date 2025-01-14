@@ -13,17 +13,19 @@ import org.parthiv.orderbook.orders.MarketOrder;
 //market order:
 public final class OrderFactory {
     public static IOrder parseOrderMessage(String message){
-        String[] tokens = message.split(",");
-        switch(tokens[0]){
-            case "L":
-                return buildLimitOrder(message);
-            case "M":
-                return new MarketOrder(tokens[1], tokens[2]);
-            default:
-                return null;
-        }
+//        String[] tokens = message.split(",");
+//        switch(tokens[0]){
+//            case "L":
+//                return buildLimitOrder(message);
+//            case "M":
+//                return new MarketOrder(tokens[1], tokens[2]);
+//            default:
+//                return null;
+//        }
+        return null;
     }
     private static LimitOrder buildLimitOrder(String message){
         String[] tokens = message.split(",");
+        return null;
     }
 }

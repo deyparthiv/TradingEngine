@@ -21,7 +21,7 @@ public class OrderServerClientHandler implements Runnable {
     }
 
     /**
-     * Listen for messages from the connected client
+     * Listen for messages from the connected client, and send confirmation once request submitted
      */
     @Override
     public void run() {
@@ -36,5 +36,6 @@ public class OrderServerClientHandler implements Runnable {
                 e.printStackTrace();
             }
         }
+        client.close();
     }
 }

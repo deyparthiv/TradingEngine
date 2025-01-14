@@ -4,13 +4,15 @@ import org.parthiv.orderbook.OrderBook;
 import org.parthiv.orderbook.OrderRemover;
 import org.parthiv.orderbook.orders.LimitOrder;
 import org.parthiv.orderbook.orders.OrderCore;
+import org.parthiv.security.ISecurity;
+import org.parthiv.security.Security;
 
 public class OrderBookTests {
     @Test
     public void testAddBuyLimitOrder() {
         String mockSecurityId = "1";
-
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
         OrderAdder adder = new OrderAdder(orderBook);
 
         String mockOrderId = "orderId";
@@ -29,7 +31,9 @@ public class OrderBookTests {
     public void testRemoveBuyLimitOrder() {
         //add order
         String mockSecurityId = "1";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+
+        OrderBook orderBook = new OrderBook(mockSecurity);
         OrderAdder adder = new OrderAdder(orderBook);
 
         String mockOrderId = "orderId";
@@ -51,7 +55,8 @@ public class OrderBookTests {
     @Test
     public void testAddSellLimitOrder() {
         String mockSecurityId = "1";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
         OrderAdder adder = new OrderAdder(orderBook);
 
         String mockOrderId = "orderId";
@@ -70,7 +75,8 @@ public class OrderBookTests {
     public void testRemoveSellLimitOrder() {
         //add order
         String mockSecurityId = "1";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
         OrderAdder adder = new OrderAdder(orderBook);
 
         String mockOrderId = "orderId";
@@ -92,7 +98,8 @@ public class OrderBookTests {
     @Test
     public void testBidsOrderingByPrice() {
         String mockSecurityId = "security";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
 
         OrderAdder orderAdder = new OrderAdder(orderBook);
 
@@ -115,7 +122,8 @@ public class OrderBookTests {
     @Test
     public void testAsksOrderingByPrice() {
         String mockSecurityId = "security";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
 
         OrderAdder orderAdder = new OrderAdder(orderBook);
 
@@ -138,7 +146,8 @@ public class OrderBookTests {
     @Test
     public void testBidsOrderingAtSamePrice() {
         String mockSecurityId = "security";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
         long price = 5;
 
         String orderId1 = "order1";
@@ -165,7 +174,8 @@ public class OrderBookTests {
     @Test
     public void testAsksOrderingAtSamePrice() {
         String mockSecurityId = "security";
-        OrderBook orderBook = new OrderBook(mockSecurityId);
+        ISecurity mockSecurity = new Security(mockSecurityId,"random");
+        OrderBook orderBook = new OrderBook(mockSecurity);
         long price = 5;
 
         String orderId1 = "order1";
